@@ -1,0 +1,4 @@
+string query = "select SubAccountCode + ' - ' + SubAccountDesc as Unit_Nbr_Name FROM MAS_LER.dbo.GL_SubAccount where status = 'A' and SubAccountCode > '10000' order by Unit_Nbr_Name";
+string [] results = sql("scasql03_MAS_LER_datasource", query);
+
+return results;

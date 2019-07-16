@@ -1,0 +1,14 @@
+string [] CFN = {"System", "Division", "Change_Type", "Enviornment", "Request Date", "Date_Needed","Impart Analysis"};
+string [] CF = {"customfield_10584", "customfield_10597", "customfield_10583", "customfield_10586", "customfield_10594", "customfield_10595", "customfield_10596"};
+
+function makeRequired(string [] CFN, string [] CF) {
+    for (string CustomFieldName in CFN) {
+        for (string CustomField in CF) {
+            if (!isNotNull(%CustomField%)) {
+                return "false,  %CustomFieldName% is required";
+            } //end if   
+        }//end of CustomField
+    }//end of CustomFieldName
+}//end of makeRequired
+
+makeRequired(CFN, CF);

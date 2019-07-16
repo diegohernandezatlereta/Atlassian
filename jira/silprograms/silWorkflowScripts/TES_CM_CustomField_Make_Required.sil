@@ -1,0 +1,22 @@
+if (!isNotNull(customfield_10584)) {
+        return false, "System is required";
+  }
+   if (!isNotNull(customfield_10597)) {
+        return false, "Division is required";
+  } 
+  if (!isNotNull(customfield_10583)) {
+        return false, "Change Type is required";
+  }
+   if (!isNotNull(customfield_10586)) {
+        return false, "Enviornment is required";
+  } 
+  if (!isNotNull(customfield_10594)) {
+        return false, "Request Date is required";
+  }
+   if (!isNotNull(customfield_10595)) {
+        return false, "Date Needed is required";
+  } 
+  if (!isNotNull(customfield_10596)) {
+        return false, "Impart Analysis is required";
+  }
+  

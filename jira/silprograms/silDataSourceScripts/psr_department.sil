@@ -1,0 +1,3 @@
+string query = "select distinct ResponsibleTeamName AS Department from Detail where ResponsibleTeamName is not null and ResponsibleTeamName <> '' order by ResponsibleTeamName";
+string [] results = sql("psr_datasource", query);
+return results;
