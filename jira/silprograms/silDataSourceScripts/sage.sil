@@ -1,3 +1,4 @@
+//comments 18July19
 string query = "select RoleName + ' - ' + RoleDescription as Sage_Acct_Role FROM MAS_SYSTEM.dbo.SY_Role where hidden = 'N' order by Sage_Acct_Role";
 string [] results = sql("scasql03_MAS_LER_datasource", query);
 
