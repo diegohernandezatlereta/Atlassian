@@ -1,0 +1,19 @@
+//Parent Information 
+//JIRA - PT-94
+//Action script
+
+string projectKey = key;
+
+boolean isDisabled = false;
+boolean isRequired = true;
+string badesc = "Please Provide a basic Summary";
+
+BA_createHtmlContent("<h1>Blocking Task</h1>");
+BA_createInput("Summary", "", isDisabled, isRequired, "Please provide a basic Summary");
+BA_createTextArea("Description", "", isDisabled, 3, isRequired, "Please provide a basic Description");
+BA_createMultiSelectList("Priority", {"High", "Medium", "Low"}, {"a", "b"}, isDisabled, isRequired, "Please provide Priority");
+BA_createSelectList("Blocking Task Points", {"1", "2", "3", "5" ,"8"}, "1", isDisabled, isRequired, "Please provide Story Points");
+BA_createFileUpload("Attachment", isDisabled, isRequired, "Please load any attachments");
+ 
+BA_setActionTitle("Blocking Task for " + key + " " + description);
+BA_setExecuteButtonText("OK"); 
